@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>BeOnTime</title>
+    <link href="assets/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="assets/icons/logo.png" type="image" />
+</head>
+
+<body>
+    <div id="botLogin" class="image ">
+        <div class="d-flex flex-column align-items-center">
+            <h1 class="bot-title">BeOnTime</h1>
+            <h2 class="bot-subtitle">Login</h2>
+
+            <div class="inputContainer">
+                <div class="inputFrame">
+                    <img class="loginIcon" src="assets/icons/user.png" alt="">
+                    <input id="email" class="loginInput" type="text" placeholder="email@ucn.dk">
+                </div>
+                <div class="inputFrame">
+                    <img class="loginIcon" src="assets/icons/padlock.png" alt="">
+                    <input id="password" class="loginInput" type="password" placeholder="password">
+                </div>
+                <button id="login" class="loginBtn">LogIn</button>
+                <p class="forgot">Forgot your password?</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="botApp" class="hidden">
+        <div>
+            <div class="d-flex justify-content-between align-items-center m-3">
+                <img class="icon" src="assets/icons/logo.png" alt="">
+                <p class="h3 account-name"></p>
+                <div class="account-container">
+                    <input type="checkbox" class="toggler">
+                    <img class="icon" src="assets/icons/account.png" alt="">
+                    <div class="account">
+                        <p class="account-name ml-3 mb-0"></p>
+                        <p class="account-role ml-3"></p>
+
+                        <div class="d-flex flex-column m-3 mt-4">
+                            <button id="myProfile" class="logoutBtn mr-auto">My Profile</button>
+                            <button id="logout" class="logoutBtn mr-auto mt-3">Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mar-top">
+                <p class="display-4 border-bottom border-info">classes</p>
+
+                <div id="accordion">
+                    <!-- <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo">
+                                biology
+                            </button>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div id="dataField" class="card-body d-flex" data-id=1>
+                                <div id="piechart1"></div>
+                                <p class="pr-5">Jan Petros</p>
+                                
+                                    <label class="switch">
+                                    <input id="checkbox" type="checkbox">
+                                    <span class="slider round"></span>
+                                </label> 
+                               
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="botEditProfile" class="hidden">
+        <div class="d-flex justify-content-between align-items-center m-3">
+            <img class="icon" src="assets/icons/logo.png" alt="">
+            <p class="h3">My profile</p>
+            <div class="account-container">
+                <input type="checkbox" class="toggler">
+                <img class="icon" src="assets/icons/account.png" alt="">
+                <div class="account">
+                    <p class="account-name ml-3 mb-0"></p>
+                    <p class="account-role ml-3"></p>
+
+                    <div class="d-flex flex-column m-3 mt-4">
+                        <button id="myProfile" class="logoutBtn mr-auto">Profile</button>
+                        <button id="logout" class="logoutBtn mr-auto mt-3">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container m-3">
+            <div class="p-3">
+                <p class="account-name">Jano Fero</p>
+                <p class="account-role">Studak</p>
+            </div>
+            <div class="p-3">
+                <p>email</p>
+                <p id="userEmail">no pomoc email</p>
+            </div>
+            <div class="p-3">
+                <p>phone number</p>
+                <p id="userPhoneNumber">0904658875</p>
+                <input id="newNumber" class="hidden" type="number">
+                <button id="editNumber" class="logoutBtn">Edit</button>
+                <button id="submitNumber" class="logoutBtn hidden">Submit number</button>
+                <button id="goBack" class="logoutBtn">Go back</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

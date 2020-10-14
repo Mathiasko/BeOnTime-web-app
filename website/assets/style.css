@@ -1,0 +1,212 @@
+.hidden {
+    display: none;
+}
+
+.image {
+    background-image: url(icons/login.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.bot-title {
+    font-weight: bold;
+    font-size: 50px;
+    color: #44869B;
+    text-shadow: 0px 3px 5px #00000052;
+    padding-top: 5rem;
+}
+
+.bot-subtitle {
+    font-weight: bold;
+    font-size: 40px;
+    color: #ffffff;
+    padding-top: 2rem;
+}
+
+.inputContainer {
+    padding-top: 2rem;
+    display: grid;
+    justify-items: center;
+    row-gap: 1rem;
+}
+
+.inputFrame {
+    position: relative;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.287);
+}
+
+input {
+    font-size: 15px;
+    border-radius: inherit;
+    border: none;
+    outline: none;
+    padding: 15px 40px;
+}
+
+.loginIcon {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+.loginBtn {
+    color: white;
+    border-radius: 50px;
+    background-color: #44869B;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.287);
+    font-size: 25px;
+    border: none;
+    padding: 9px 100px;
+}
+
+
+.submitAttendance {
+    color: white;
+    border-radius: 50px;
+    background-color: #F5A328;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.287);
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.forgot {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.527);
+}
+
+.icon {
+    width: 4rem;
+}
+
+.account-container {
+    position: relative;
+}
+
+.toggler {
+    position: absolute;
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    opacity: 0;
+}
+
+.account {
+    visibility: hidden;
+    position: absolute;
+    width: 20rem;
+    height: 15rem;
+    background-color: #F5A328;
+    right: 0;
+    z-index: 2;
+    border-radius: 1rem;
+}
+
+.toggler:checked~.account {
+    visibility: visible;
+}
+
+.logoutBtn {
+    color: white;
+    border-radius: 50px;
+    background-color: #44869B;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.287);
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 2rem;
+}
+
+.account-name {
+    font-size: 2rem;
+}
+
+.account-role {
+    font-size: 1.5rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.newNumber {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(253, 108, 108);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 7px;
+    bottom: 7px;
+    background-color:rgb(255, 255, 255);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before:active {
+    background-color: #22ff59;
+  }
+
+  input:checked + .slider {
+    background-color: #5bff84;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #72ff96;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+
+  }
